@@ -1,0 +1,191 @@
+1
+00:00:01,234 --> 00:00:07,301
+Every morning at Analog Devices Thailand, one question must be answered before work can go on.
+
+2
+00:00:07,982 --> 00:00:10,522
+Which tester should get its next lot of wafers?
+
+3
+00:00:11,203 --> 00:00:14,018
+Answering it used to take more than 90 minutes.
+
+4
+00:00:14,699 --> 00:00:18,014
+This project brought the round we timed down to 20.
+
+5
+00:00:19,307 --> 00:00:22,850
+Wafer Sort tests every die on a wafer, before assembly.
+
+6
+00:00:23,125 --> 00:00:25,531
+Wafers travel in sets called lots.
+
+7
+00:00:25,806 --> 00:00:30,577
+Every lot is moved, prepared and checked by a Material Handler, or MH.
+
+8
+00:00:30,852 --> 00:00:36,122
+At the CSP station, three MH on each shift look after 84 testers.
+
+9
+00:00:37,397 --> 00:00:41,218
+First, MH decide which lots to withdraw from the Die Bank.
+
+10
+00:00:42,114 --> 00:00:49,346
+Then they push a cart from the MH station to the pass box, and collect six to eight lots: FOUPs and canisters.
+
+11
+00:00:50,243 --> 00:00:55,860
+At the desk they check each lot, print the setup sheet and make the ink map: about 14 minutes.
+
+12
+00:00:56,757 --> 00:01:02,560
+The Ricmar moves the wafers from a canister into a black FOUP: about 6 minutes of MH work.
+
+13
+00:01:03,456 --> 00:01:09,609
+An operator takes the lot to the tester. Testing takes minutes or days, with no MH work.
+
+14
+00:01:10,505 --> 00:01:15,588
+After each test step, MH check the map: usually twice, 14 minutes each.
+
+15
+00:01:16,484 --> 00:01:21,763
+Then QA, and back to the Die Bank. About an hour of MH work for every lot.
+
+16
+00:01:23,351 --> 00:01:26,765
+Where does a shift go? We logged the three MH on the floor.
+
+17
+00:01:27,700 --> 00:01:33,375
+Check Map alone is about half of their work, but fixing it means changing several systems.
+
+18
+00:01:34,311 --> 00:01:43,437
+The withdrawal decision is only 7 percent. But it is reading and adding by hand, and it decides whether a tester gets its next lot on time.
+
+19
+00:01:44,372 --> 00:01:45,946
+So we fixed that first.
+
+20
+00:01:47,386 --> 00:01:51,122
+This is how the decision is made today, one tester at a time.
+
+21
+00:01:51,934 --> 00:01:55,077
+Open the EWB board and find the tester.
+
+22
+00:01:55,888 --> 00:02:00,353
+Read its lot: 25 wafers left, and 43 hours of work.
+
+23
+00:02:01,164 --> 00:02:06,431
+Then open Statusphere, the tester's own log: is the real time close to the plan?
+
+24
+00:02:07,243 --> 00:02:17,730
+Then judge, by a rule kept in memory. MH call it “plus six”: bring the next lot if the tester runs out before 1 a.m., 18 hours from the start of the shift.
+
+25
+00:02:18,542 --> 00:02:23,051
+This tester has more than 18 hours of work left, so its next lot waits.
+
+26
+00:02:23,862 --> 00:02:28,308
+Now do that for more than 80 testers: more than 90 minutes, every round.
+
+27
+00:02:30,731 --> 00:02:34,611
+Why does it matter? A tester can only run if a lot is waiting.
+
+28
+00:02:35,475 --> 00:02:39,334
+MH are already busy about 97 percent of the shift.
+
+29
+00:02:40,197 --> 00:02:48,427
+And a rule in memory cannot be checked. Scored against the lots MH really took, “plus six” listed only 61 percent.
+
+30
+00:02:49,811 --> 00:02:54,036
+Our idea: let a script do the reading and the adding, with one written rule.
+
+31
+00:02:55,386 --> 00:03:00,083
+Add the hours left on the running lot, plus the lots already waiting at the tester.
+
+32
+00:03:01,433 --> 00:03:04,825
+If the total is under a threshold, withdraw the next lot.
+
+33
+00:03:06,175 --> 00:03:08,604
+MH get one list, and still decide.
+
+34
+00:03:10,247 --> 00:03:16,047
+Which threshold? Every morning we saved the EWB, and the lots MH really took.
+
+35
+00:03:16,749 --> 00:03:19,829
+We tried five windows and picked 24 hours.
+
+36
+00:03:20,531 --> 00:03:31,779
+Then we tested it blind: the list was saved each morning and never shown to MH. It caught 82 percent of the lots MH took, against 54 for the old rule.
+
+37
+00:03:32,481 --> 00:03:39,180
+Later we ran the backtest once more, on all the data up to that day. It gave 24 and a half hours.
+
+38
+00:03:39,882 --> 00:03:44,361
+Tested blind again on seven new days, it held: 85 percent.
+
+39
+00:03:45,731 --> 00:03:54,810
+This is the real thing. We take the hours on the EWB, apply our rule, and get the list: every lot to withdraw, most urgent first.
+
+40
+00:03:55,451 --> 00:03:57,549
+MH tick each lot they withdraw.
+
+41
+00:03:58,190 --> 00:04:03,823
+If they don't, they write why. And if they take a lot that is not on the list, they write why too.
+
+42
+00:04:04,465 --> 00:04:11,424
+This green and red board is a prototype: the same list, inside the EWB that MH already know.
+
+43
+00:04:12,854 --> 00:04:19,852
+The results. The decision round went from more than 90 minutes to 20, the best case in the day round we timed.
+
+44
+00:04:21,202 --> 00:04:28,541
+On seven new days, 85 percent of the lots MH took were on the list, against 56 for the old rule.
+
+45
+00:04:29,891 --> 00:04:32,434
+The target is 90, so we keep tracking.
+
+46
+00:04:34,201 --> 00:04:37,194
+That gives back about 140 minutes a day.
+
+47
+00:04:37,388 --> 00:04:43,717
+By our model, the same team could serve about 13 more testers: cost avoided, not a job cut.
+
+48
+00:04:43,911 --> 00:04:49,396
+And the rule is now written down. Anyone gets the same list, and MH still decide.

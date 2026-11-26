@@ -1,0 +1,386 @@
+[
+ {
+  "id": "s01_1",
+  "scene": "S01",
+  "start": 1.23,
+  "end": 7.15,
+  "seconds": 5.92,
+  "text": "Every morning at Analog Devices Thailand, one question must be answered before work can go on."
+ },
+ {
+  "id": "s01_2",
+  "scene": "S01",
+  "start": 7.98,
+  "end": 10.37,
+  "seconds": 2.39,
+  "text": "Which tester should get its next lot of wafers?"
+ },
+ {
+  "id": "s01_3",
+  "scene": "S01",
+  "start": 11.2,
+  "end": 13.87,
+  "seconds": 2.67,
+  "text": "Answering it used to take more than 90 minutes."
+ },
+ {
+  "id": "s01_4",
+  "scene": "S01",
+  "start": 14.7,
+  "end": 17.86,
+  "seconds": 3.17,
+  "text": "This project brought the round we timed down to 20."
+ },
+ {
+  "id": "s02_1",
+  "scene": "S02",
+  "start": 19.31,
+  "end": 22.7,
+  "seconds": 3.39,
+  "text": "Wafer Sort tests every die on a wafer, before assembly."
+ },
+ {
+  "id": "s02_2",
+  "scene": "S02",
+  "start": 23.13,
+  "end": 25.38,
+  "seconds": 2.26,
+  "text": "Wafers travel in sets called lots."
+ },
+ {
+  "id": "s02_3",
+  "scene": "S02",
+  "start": 25.81,
+  "end": 30.43,
+  "seconds": 4.62,
+  "text": "Every lot is moved, prepared and checked by a Material Handler, or MH."
+ },
+ {
+  "id": "s02_4",
+  "scene": "S02",
+  "start": 30.85,
+  "end": 35.97,
+  "seconds": 5.12,
+  "text": "At the CSP station, three MH on each shift look after 84 testers."
+ },
+ {
+  "id": "s03_1",
+  "scene": "S03",
+  "start": 37.4,
+  "end": 41.07,
+  "seconds": 3.67,
+  "text": "First, MH decide which lots to withdraw from the Die Bank."
+ },
+ {
+  "id": "s03_2",
+  "scene": "S03",
+  "start": 42.11,
+  "end": 49.2,
+  "seconds": 7.08,
+  "text": "Then they push a cart from the MH station to the pass box, and collect six to eight lots: FOUPs and canisters."
+ },
+ {
+  "id": "s03_3",
+  "scene": "S03",
+  "start": 50.24,
+  "end": 55.71,
+  "seconds": 5.47,
+  "text": "At the desk they check each lot, print the setup sheet and make the ink map: about 14 minutes."
+ },
+ {
+  "id": "s03_4",
+  "scene": "S03",
+  "start": 56.76,
+  "end": 62.41,
+  "seconds": 5.65,
+  "text": "The Ricmar moves the wafers from a canister into a black FOUP: about 6 minutes of MH work."
+ },
+ {
+  "id": "s03_5",
+  "scene": "S03",
+  "start": 63.46,
+  "end": 69.46,
+  "seconds": 6,
+  "text": "An operator takes the lot to the tester. Testing takes minutes or days, with no MH work."
+ },
+ {
+  "id": "s03_6",
+  "scene": "S03",
+  "start": 70.5,
+  "end": 75.44,
+  "seconds": 4.93,
+  "text": "After each test step, MH check the map: usually twice, 14 minutes each."
+ },
+ {
+  "id": "s03_7",
+  "scene": "S03",
+  "start": 76.48,
+  "end": 81.61,
+  "seconds": 5.13,
+  "text": "Then QA, and back to the Die Bank. About an hour of MH work for every lot."
+ },
+ {
+  "id": "s04_1",
+  "scene": "S04",
+  "start": 83.35,
+  "end": 86.61,
+  "seconds": 3.26,
+  "text": "Where does a shift go? We logged the three MH on the floor."
+ },
+ {
+  "id": "s04_2",
+  "scene": "S04",
+  "start": 87.7,
+  "end": 93.22,
+  "seconds": 5.52,
+  "text": "Check Map alone is about half of their work, but fixing it means changing several systems."
+ },
+ {
+  "id": "s04_3",
+  "scene": "S04",
+  "start": 94.31,
+  "end": 103.29,
+  "seconds": 8.98,
+  "text": "The withdrawal decision is only 7 percent. But it is reading and adding by hand, and it decides whether a tester gets its next lot on time."
+ },
+ {
+  "id": "s04_4",
+  "scene": "S04",
+  "start": 104.37,
+  "end": 105.8,
+  "seconds": 1.42,
+  "text": "So we fixed that first."
+ },
+ {
+  "id": "s05_1",
+  "scene": "S05",
+  "start": 107.39,
+  "end": 110.97,
+  "seconds": 3.59,
+  "text": "This is how the decision is made today, one tester at a time."
+ },
+ {
+  "id": "s05_2",
+  "scene": "S05",
+  "start": 111.93,
+  "end": 114.93,
+  "seconds": 2.99,
+  "text": "Open the EWB board and find the tester."
+ },
+ {
+  "id": "s05_3",
+  "scene": "S05",
+  "start": 115.89,
+  "end": 120.2,
+  "seconds": 4.31,
+  "text": "Read its lot: 25 wafers left, and 43 hours of work."
+ },
+ {
+  "id": "s05_4",
+  "scene": "S05",
+  "start": 121.16,
+  "end": 126.28,
+  "seconds": 5.12,
+  "text": "Then open Statusphere, the tester's own log: is the real time close to the plan?"
+ },
+ {
+  "id": "s05_5",
+  "scene": "S05",
+  "start": 127.24,
+  "end": 137.58,
+  "seconds": 10.34,
+  "text": "Then judge, by a rule kept in memory. MH call it “plus six”: bring the next lot if the tester runs out before 1 a.m., 18 hours from the start of the shift."
+ },
+ {
+  "id": "s05_6",
+  "scene": "S05",
+  "start": 138.54,
+  "end": 142.9,
+  "seconds": 4.36,
+  "text": "This tester has more than 18 hours of work left, so its next lot waits."
+ },
+ {
+  "id": "s05_7",
+  "scene": "S05",
+  "start": 143.86,
+  "end": 148.16,
+  "seconds": 4.3,
+  "text": "Now do that for more than 80 testers: more than 90 minutes, every round."
+ },
+ {
+  "id": "s06_1",
+  "scene": "S06",
+  "start": 150.73,
+  "end": 154.46,
+  "seconds": 3.73,
+  "text": "Why does it matter? A tester can only run if a lot is waiting."
+ },
+ {
+  "id": "s06_2",
+  "scene": "S06",
+  "start": 155.47,
+  "end": 159.18,
+  "seconds": 3.71,
+  "text": "MH are already busy about 97 percent of the shift."
+ },
+ {
+  "id": "s06_3",
+  "scene": "S06",
+  "start": 160.2,
+  "end": 168.28,
+  "seconds": 8.08,
+  "text": "And a rule in memory cannot be checked. Scored against the lots MH really took, “plus six” listed only 61 percent."
+ },
+ {
+  "id": "s07_1",
+  "scene": "S07",
+  "start": 169.81,
+  "end": 173.89,
+  "seconds": 4.07,
+  "text": "Our idea: let a script do the reading and the adding, with one written rule."
+ },
+ {
+  "id": "s07_2",
+  "scene": "S07",
+  "start": 175.39,
+  "end": 179.93,
+  "seconds": 4.55,
+  "text": "Add the hours left on the running lot, plus the lots already waiting at the tester."
+ },
+ {
+  "id": "s07_3",
+  "scene": "S07",
+  "start": 181.43,
+  "end": 184.68,
+  "seconds": 3.24,
+  "text": "If the total is under a threshold, withdraw the next lot."
+ },
+ {
+  "id": "s07_4",
+  "scene": "S07",
+  "start": 186.18,
+  "end": 188.45,
+  "seconds": 2.28,
+  "text": "MH get one list, and still decide."
+ },
+ {
+  "id": "s08_1",
+  "scene": "S08",
+  "start": 190.25,
+  "end": 195.9,
+  "seconds": 5.65,
+  "text": "Which threshold? Every morning we saved the EWB, and the lots MH really took."
+ },
+ {
+  "id": "s08_2",
+  "scene": "S08",
+  "start": 196.75,
+  "end": 199.68,
+  "seconds": 2.93,
+  "text": "We tried five windows and picked 24 hours."
+ },
+ {
+  "id": "s08_3",
+  "scene": "S08",
+  "start": 200.53,
+  "end": 211.63,
+  "seconds": 11.1,
+  "text": "Then we tested it blind: the list was saved each morning and never shown to MH. It caught 82 percent of the lots MH took, against 54 for the old rule."
+ },
+ {
+  "id": "s08_4",
+  "scene": "S08",
+  "start": 212.48,
+  "end": 219.03,
+  "seconds": 6.55,
+  "text": "Later we ran the backtest once more, on all the data up to that day. It gave 24 and a half hours."
+ },
+ {
+  "id": "s08_5",
+  "scene": "S08",
+  "start": 219.88,
+  "end": 224.21,
+  "seconds": 4.33,
+  "text": "Tested blind again on seven new days, it held: 85 percent."
+ },
+ {
+  "id": "s09_1",
+  "scene": "S09",
+  "start": 225.73,
+  "end": 234.66,
+  "seconds": 8.93,
+  "text": "This is the real thing. We take the hours on the EWB, apply our rule, and get the list: every lot to withdraw, most urgent first."
+ },
+ {
+  "id": "s09_2",
+  "scene": "S09",
+  "start": 235.45,
+  "end": 237.4,
+  "seconds": 1.95,
+  "text": "MH tick each lot they withdraw."
+ },
+ {
+  "id": "s09_3",
+  "scene": "S09",
+  "start": 238.19,
+  "end": 243.67,
+  "seconds": 5.48,
+  "text": "If they don't, they write why. And if they take a lot that is not on the list, they write why too."
+ },
+ {
+  "id": "s09_4",
+  "scene": "S09",
+  "start": 244.47,
+  "end": 251.27,
+  "seconds": 6.81,
+  "text": "This green and red board is a prototype: the same list, inside the EWB that MH already know."
+ },
+ {
+  "id": "s10_1",
+  "scene": "S10",
+  "start": 252.85,
+  "end": 259.7,
+  "seconds": 6.85,
+  "text": "The results. The decision round went from more than 90 minutes to 20, the best case in the day round we timed."
+ },
+ {
+  "id": "s10_2",
+  "scene": "S10",
+  "start": 261.2,
+  "end": 268.39,
+  "seconds": 7.19,
+  "text": "On seven new days, 85 percent of the lots MH took were on the list, against 56 for the old rule."
+ },
+ {
+  "id": "s10_3",
+  "scene": "S10",
+  "start": 269.89,
+  "end": 272.28,
+  "seconds": 2.39,
+  "text": "The target is 90, so we keep tracking."
+ },
+ {
+  "id": "s11_1",
+  "scene": "S11",
+  "start": 274.2,
+  "end": 277.04,
+  "seconds": 2.84,
+  "text": "That gives back about 140 minutes a day."
+ },
+ {
+  "id": "s11_2",
+  "scene": "S11",
+  "start": 277.39,
+  "end": 283.57,
+  "seconds": 6.18,
+  "text": "By our model, the same team could serve about 13 more testers: cost avoided, not a job cut."
+ },
+ {
+  "id": "s11_3",
+  "scene": "S11",
+  "start": 283.91,
+  "end": 289.25,
+  "seconds": 5.33,
+  "text": "And the rule is now written down. Anyone gets the same list, and MH still decide."
+ }
+]
