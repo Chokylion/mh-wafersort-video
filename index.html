@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One Day of MH in Wafer Sort: senior project film</title>
+<meta name="description" content="A 5-minute film of my senior project: the daily withdrawal decision in Wafer Sort, from more than 90 minutes to 20.">
+<meta property="og:title" content="One Day of MH in Wafer Sort">
+<meta property="og:description" content="A 5-minute film of my senior project: the daily withdrawal decision in Wafer Sort, from more than 90 minutes to 20.">
+<meta property="og:image" content="poster.jpg">
+<style>
+:root{--blue:#0067B9;--navy:#00325C;--panel:#F5F6F7;--line:#E1E6EB;--text:#33414F;--mute:#6B7885}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--text);font:17px/1.55 Barlow,"Segoe UI",system-ui,-apple-system,sans-serif}
+main{max-width:1120px;margin:0 auto;padding:40px 24px 72px}
+.k{color:var(--blue);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.k:before{content:"";display:inline-block;width:8px;height:8px;background:var(--blue);margin-right:10px;vertical-align:1px}
+h1{color:var(--navy);font-weight:700;font-size:clamp(30px,4.6vw,48px);line-height:1.12;margin:12px 0 14px}
+.lead{border-left:3px solid var(--blue);padding-left:14px;margin:0 0 26px;max-width:820px;font-size:18px}
+.seg{display:inline-flex;background:var(--panel);border-radius:10px;padding:4px;margin:0 0 14px}
+.seg button{border:0;background:none;font:inherit;font-weight:600;font-size:15px;color:var(--mute);padding:9px 18px;border-radius:7px;cursor:pointer}
+.seg button.on{background:var(--navy);color:#fff}
+video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000;box-shadow:0 14px 44px rgba(0,50,92,.18)}
+.ch{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.ch button{border:1px solid var(--line);background:#fff;font:inherit;font-size:14px;color:var(--text);padding:7px 12px;border-radius:8px;cursor:pointer}
+.ch button b{color:var(--blue);font-weight:700;margin-right:6px;font-variant-numeric:tabular-nums}
+.ch button.on{background:#E6F0F8;border-color:var(--blue);color:var(--navy)}
+.ch button:hover{border-color:var(--blue)}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 8px}
+a.btn{display:inline-block;padding:12px 20px;border-radius:9px;background:var(--blue);color:#fff;font-weight:600;text-decoration:none}
+a.btn.alt{background:var(--panel);color:var(--navy)}
+h2{color:var(--navy);font-size:22px;margin:44px 0 10px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:14px 0}
+.stat{background:var(--panel);border-radius:12px;padding:18px 20px}
+.stat b{display:block;color:var(--navy);font-size:30px;line-height:1.1}
+.stat span{font-size:15px;color:var(--mute)}
+p.s{color:var(--mute);font-size:14.5px;max-width:860px}
+p.s a{color:var(--mute)}
+</style></head><body><main>
+<div class="k">Senior project film · IE Co-op Final Project 2026</div>
+<h1>One Day of MH in Wafer Sort</h1>
+<p class="lead">Every morning, Material Handlers must answer one question for more than 80 testers: which tester should get its next lot of wafers? This film shows how the answer went from a rule in memory to one written rule and one list.</p>
+
+<div class="seg" role="tablist" aria-label="Sound">
+  <button class="on" data-src="film-voice.mp4">With narration</button>
+  <button data-src="film-music.mp4">Music only</button>
+</div>
+<video id="v" controls preload="metadata" poster="poster.jpg" playsinline>
+  <source src="film-voice.mp4" type="video/mp4">
+  <track kind="subtitles" srclang="en" label="English" src="MH-WaferSort-5min-EN.vtt">
+</video>
+<div class="ch" id="ch"></div>
+
+<div class="row">
+  <a class="btn" href="https://github.com/Chokylion/mh-wafersort-video/releases/latest">Download full quality (MP4, 4:59, 1080p)</a>
+  <a class="btn alt" href="MH-WaferSort-5min-EN.srt" download>Subtitles (.srt)</a>
+  <a class="btn alt" href="https://github.com/Chokylion/mh-wafersort-video/blob/main/DUBBING-SCRIPT.md">Script with timings</a>
+  <a class="btn alt" href="https://github.com/Chokylion/mh-wafersort-video/blob/main/FACTS.md">Where every number comes from</a>
+</div>
+
+<h2>What the project did</h2>
+<div class="stats">
+  <div class="stat"><b>90+ → 20 min</b><span>the decision round we timed (day round, best case)</span></div>
+  <div class="stat"><b>85%</b><span>of the lots MH really took were on the list, on seven new days (old rule: 56%)</span></div>
+  <div class="stat"><b>IF hours left ≤ 24.5 h</b><span>withdraw the next lot. One written rule; MH still decide</span></div>
+</div>
+<p class="s">Every frame is drawn in code: a three.js model for the factory and the floor, and a 2D canvas for the infographics. Tester, lot and product names are replaced, and estimates are labelled as estimates. The 3D floor is a simplified drawing; the walking is sped up and the times shown come from the time study. The narration is a placeholder voice. Project: Process Improvement of the Wafersort Material-Handling Operation (DMAIC).</p>
+</main>
+<script>
+const v = document.getElementById('v');
+const CH = [[0,'The question'],[18.6,'Where MH sits'],[36.6,'One lot through MH'],[82.6,'Where a shift goes'],[106.6,'How MH decide today'],[150,'Why it matters'],[169,'One number, one IF'],[189.5,'Finding the number'],[225,'The product'],[252,'What we measured'],[273.5,'Same team, more time']];
+const mmss = (t) => Math.floor(t / 60) + ':' + String(Math.floor(t % 60)).padStart(2, '0');
+const box = document.getElementById('ch');
+const btns = CH.map(([t, name]) => { const b = document.createElement('button'); b.innerHTML = '<b>' + mmss(t) + '</b>' + name; b.onclick = () => { v.currentTime = t + 0.05; v.play(); }; box.appendChild(b); return b; });
+v.addEventListener('timeupdate', () => { let k = 0; CH.forEach(([t], i) => { if (v.currentTime >= t) k = i; }); btns.forEach((b, i) => b.classList.toggle('on', i === k)); });
+document.querySelectorAll('.seg button').forEach((b) => b.onclick = () => {
+  if (b.classList.contains('on')) return;
+  document.querySelectorAll('.seg button').forEach((x) => x.classList.toggle('on', x === b));
+  const t = v.currentTime, playing = !v.paused;
+  v.querySelector('source').src = b.dataset.src; v.load();
+  v.addEventListener('loadedmetadata', () => { v.currentTime = t; if (playing) v.play(); }, { once: true });
+});
+</script>
+</body></html>

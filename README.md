@@ -2,16 +2,18 @@
 
 A 5-minute film about my senior project: **Process Improvement of the Wafersort Material-Handling Operation (DMAIC)**, IE Co-op Final Project 2026.
 
-![Poster](poster.jpg)
+## ▶ Watch it in the browser
 
-## Watch
+**https://chokylion.github.io/mh-wafersort-video/**
 
-The two films are attached to the [latest release](../../releases/latest):
+[![Watch the film](poster.jpg)](https://chokylion.github.io/mh-wafersort-video/)
+
+The player page has both versions (with narration, or music only), English subtitles and scene buttons. Nothing to download.
 
 | File | What it is |
 |---|---|
-| `MH-WaferSort-5min-EN-voice.mp4` | English narration + backing track |
-| `MH-WaferSort-5min-EN-music.mp4` | Backing track and sound effects only (the base for my own voice-over) |
+| `film-voice.mp4`, `film-music.mp4` | Web copies that the player page uses (1080p, 34 MB each) |
+| [Latest release](../../releases/latest) | Full-quality files to download: `MH-WaferSort-5min-EN-voice.mp4` (English narration + backing track) and `MH-WaferSort-5min-EN-music.mp4` (backing track and sound effects only, the base for my own voice-over) |
 
 1920×1080, 24 fps, 4 min 59.75 s.
 
@@ -52,6 +54,7 @@ MH still decide.
 | `script-EN.json` | The same script as data |
 | `MH-WaferSort-5min-EN.srt` | English subtitles |
 | `FACTS.md` | Every number on screen and where it comes from |
+| `index.html`, `MH-WaferSort-5min-EN.vtt` | The player page and its subtitles |
 
 ## How it was made
 
